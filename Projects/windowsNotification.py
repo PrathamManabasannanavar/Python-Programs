@@ -17,8 +17,8 @@ sender_email = '190vpu2pratham@gmail.com'
 receiver_email = 'pratham29052004@gmail.com'
 password = os.getenv("PythonEmailPass")
 
-subject = "Test Email"
-body = f"Some user logged in to your PC at {current_time.tm_mday}/{current_time.tm_mon}/{current_time.tm_year}\t{current_time.tm_hour}:{current_time.tm_min}:{current_time.tm_sec}"
+subject = "Windows Login Notifcation Email"
+body = f"{os.getlogin()} user logged in to your PC at {current_time.tm_mday}/{current_time.tm_mon}/{current_time.tm_year}\t{current_time.tm_hour}:{current_time.tm_min}:{current_time.tm_sec}"
 msg = MIMEMultipart()
 msg['From'] = sender_email
 msg['To'] = receiver_email
