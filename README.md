@@ -1,1 +1,1 @@
-This Repository consists of Node.JS programs
+This Repository consists of Python programs
